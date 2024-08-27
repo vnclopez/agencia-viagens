@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*============================= SEÇÃO CABEÇALHO =======================*/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 32px;
+    height: 32px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+/*============================= SEÇÃO FORMULÁRIO =======================*/
+.secao-formulario {
+    width: 100%;
+    height: auto;
+    background-image: url('../imagens/bahia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-formulario .container {
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.container-titulo-formulario {
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-titulo-formulario img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.container-titulo-formulario h2 {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.container-formulario {
+    background-color: #fff;
+    width: 100%;
+    padding: 30px 25px 20px;
+}
+
+.container-formulario h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+}
+
+.campo-digitavel,
+select {
+    height: 32px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.campo-digitavel {
+    padding: 0 5px;
+}
+
+select {
+    padding: 0 3px;
+}
+
+.grupo-controles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grupo-controles div {
+    width: calc(50% - 10px);
+}
+
+.grupo-marcaveis {
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.grupo-marcaveis div {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.grupo-marcaveis input {
+    width: 15px;
+}
+
+.grupo-marcaveis label {
+    margin-left: 8px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+/*============================= SEÇÃO OFERTAS E SEÇÃO ANÚNCIOS =======================*/
+
+.secao-ofertas,
+.secao-anuncios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0;
+}
+
+.secao-ofertas h2,
+.secao-anuncios h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao-ofertas h3,
+.secao-anuncios h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.galeria-ofertas,
+.imagens-anuncios {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-destaque,
+.imagens-anuncios figure {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.galeria-ofertas img,
+.imagens-anuncios figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*============================= SEÇÃO OFERTAS =======================*/
+
+.galeria-ofertas {
+    height: 375px;
+}
+
+.galeria-ofertas div {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria-ofertas figure {
+    position: relative;
+}
+
+.galeria-ofertas div figure {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.galeria-ofertas figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+/*============================= SEÇÃO ANÚNCIOS =======================*/
+
+.imagens-anuncios {
+    height: auto;
+}
+
+.imagens-anuncios figure div {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.imagens-anuncios figure h3 {
+    font-weight: bold;
+}
+
+.imagens-anuncios figure p {
+    color: grey;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/*============================= SEÇÃO RODAPÉ =======================*/
+footer {
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-rodape {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.container-rodape div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+footer img {
+    width: 18px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/*============================= MEDIA QUERIES =======================*/
+
+@media (max-width: 1100px) {
+
+    .container,
+    .container-formulario,
+    .container-titulo-formulario {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* fim de (max-width: 1100px) */
+}
+
+@media (max-width: 768px) {
+
+    button {
+        width: 100%;
+    }
+
+    .galeria-ofertas {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .galeria-ofertas div {
+        width: 100%;
+    }
+
+    .galeria-ofertas div figure,
+    .galeria-ofertas figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 0 0;
+    }
+
+    .imagens-anuncios {
+        flex-direction: column;
+    }
+
+    .imagens-anuncios figure {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .imagens-anuncios figure img {
+        height: auto;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-rodape {
+        width: 250px;
+    }
+
+    /* fim de (max-width: 768px) */
+}
+
+@media (max-width: 540px) {
+
+    .grupo-controles {
+        flex-direction: column;
+    }
+
+    .grupo-controles div,
+    .grupo-marcaveis div {
+        width: 100%;
+    }
+
+    .grupo-marcaveis {
+        gap: 25px;
+        margin-bottom: 15px;
+    }
+
+    /* fim de (max-width: 540px) */
+}
